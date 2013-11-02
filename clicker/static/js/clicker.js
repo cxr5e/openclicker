@@ -1,6 +1,6 @@
 /*
 
-Openclicker - an open source clicker game.
+Openclicker -1.0 | an open source clicker game.
 Copyright (C) 2013  Cheryl Yang and Ryan Lam
 Contact: cheriexryan@hellokitty.com
 
