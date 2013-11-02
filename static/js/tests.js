@@ -22,12 +22,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 test('incrementProjects', function() {
     // First call should increment project once.
     result = incrementProjects(); 
-    ok(result === 1, 'First call was successful'); 
+    equal(result, 1, 'First call was successful'); 
     
     // Second call should increment project again. 
     result = incrementProjects(); 
-    ok(result === 2, 'Second call was successful'); 
+    equal(result, 2, 'Second call was successful'); 
     
     result = incrementProjects(); 
-    ok(result === 3, 'Third call was successful'); 
+    equal(result, 3, 'Third call was successful'); 
     })

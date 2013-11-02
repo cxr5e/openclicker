@@ -24,7 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <head>
         <style type="text/css"> 
             #center {
-                width: 350px;
+                width: 500px;
                 height: 350px;
 
                 position: absolute;
@@ -33,7 +33,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 left: 0;
                 right: 0;
                 
+                text-align: center;
+                
                 margin: auto;
+            }
+            h1 {
+                font-family: cursive; 
             }
         </style>
 
@@ -43,9 +48,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <body>
         <div id="center">
             <p>
-                <font face="Comic Sans MS">
                     <h1 id="count">click to start</h1>
-                </font>
             </p>
             <img src="{% static 'computer.png' %}" onclick="incrementProjects();" />
         </div>
