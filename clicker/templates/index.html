@@ -16,22 +16,17 @@
             }
         </style>
 
-        <script type="text/javascript">
-            projects = 0; 
-            function incrementProjects() {
-                projects++; 
-                countDiv = document.getElementById('count'); 
-                countDiv.innerHTML = "<h1>"+projects+" open source projects made!</h1>"
-            }
-        </script>
+        <script type="text/javascript" src="{% static 'js/clicker.js' %}"></script>
 
     </head>
     <body>
         <div id="center">
-            <font face="Comic Sans MS">
-            <div id="count"><h1>click to start</h1></div><p></p>
+            <p>
+                <font face="Comic Sans MS">
+                    <h1 id="count">click to start</h1>
+                </font>
+            </p>
             <img src="{% static 'computer.png' %}" onclick="incrementProjects();" />
-            </font>
         </div>
     </body>
 </html>
