@@ -1,35 +1,35 @@
 {% load staticfiles %}
 <html>
-<head>
-<style type="text/css"> 
-#center {
-	width: 350px;
-	height: 350px;
+    <head>
+        <style type="text/css"> 
+            #center {
+                width: 350px;
+                height: 350px;
 
-	position: absolute;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	
-	margin: auto;
-}
-</style>
+                position: absolute;
+                top:0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                
+                margin: auto;
+            }
+        </style>
 
-<script type="text/javascript">
-projects = 0; 
-function incrementProjects() {
-    projects++; 
-    countDiv = document.getElementById('count'); 
-    countDiv.innerHTML = "<h1>"+projects+" open source projects made!</h1>"
-}
-</script>
+        <script type="text/javascript">
+            projects = 0; 
+            function incrementProjects() {
+                projects++; 
+                countDiv = document.getElementById('count'); 
+                countDiv.innerHTML = "<h1>"+projects+" open source projects made!</h1>"
+            }
+        </script>
 
-</head>
-<body>
-<div id="center">
-<div id="count"><h1>click to start</h1></div><p></p>
-<img src="{% static 'computer.png' %}" onclick="incrementProjects();" />
-</div>
-</body>
+    </head>
+    <body>
+        <div id="center">
+        <div id="count"><h1>click to start</h1></div><p></p>
+        <img src="{% static 'computer.png' %}" onclick="incrementProjects();" />
+        </div>
+    </body>
 </html>
