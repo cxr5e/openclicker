@@ -1,10 +1,10 @@
 import os
 import sys
 
-try:
-    os.chdir(os.path.dirname(__file__))
-except WindowsError:
-    pass
+# try:
+    # os.chdir(os.path.dirname(__file__))
+# except WindowsError:
+    # pass
 
 # print "*** Syncing The Fucking DB... ***"
 # os.system('python manage.py syncdb')
